@@ -33,28 +33,32 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="pday-logo img-fluid" src="img/text-message-appointment-reminders-pdr.svg" width="150" height="150"></a>
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="pday-logo img-fluid" src="img/text-message-appointment-reminders-pdr.svg" width="160px" height="160px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-features js-scroll-trigger" href="#about">About Us</a>
+              <a class="nav-link dropdown-toggle js-scroll-trigger" data-toggle="dropdown" href="#about">About Us</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-features js-scroll-trigger" href="#services">Blog</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link nav-link-features js-scroll-trigger" href="#page-top">Pricing</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-features" href="hipaa.html">HIPAA</a>
+              <a class="nav-link js-scroll-trigger" href="pricing.html">Pricing</a>
             </li>
-            <li class="nav-item ml-5 ">
-              <a class="nav-link nav-link-features js-scroll-trigger btn btn-outline-light" href="login.html">Sign In</a>
+            <li class="nav-item">
+              <a class="nav-link" href="hipaa.html">HIPAA</a>
+            </li>
+             <li class="nav-item ml-5 login-btn">
+              <a class="nav-link js-scroll-trigger btn btn-outline-light" href="#login">Sign In</a>
             </li>
           </ul>
         </div>
@@ -85,19 +89,10 @@
 
   <!--section separator -->
 
-    <section class="">
-      <div class="container-fluid container-cardz">
+    <section id="world">
+      <div class="container container-cardz">
         <div class="row mx-auto">
-          <div class="col-md-4">
-            <div class="cardz mx-auto" style="width: 100%;">
-              <img class="price-card" src="img_avatar.png" alt="Avatar" style="width:95%">
-              <div class="container">
-              <h4 class="text-info"><b>Express Account</b></h4> 
-              <p>Architect &amp; Engineer</p> 
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
+            <div class="col-md-6">
             <div class="cardz mx-auto" style="width: 100%;">
               <img class="price-card" src="img_avatar.png" alt="Avatar" style="width:95%">
               <div class="container">
@@ -106,13 +101,19 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-            <div class="cardz mx-auto" style="width: 100%;">
+          <div class="col-md-6">
+            <div>
+              <h1 class="text-right">Perfect Day Reminders pays for itself almost immediately</h1>
+            </div>
+          </div>
+      
+        
+          <!--   <div class="cardz mx-auto" style="width: 100%;">
               <img class="price-card" src="img_avatar.png" alt="Avatar" style="width:95%">
               <div class="container">
-              <h4 class="text-info"><b>HIPAA Compliant</b></h4> 
-              <p>Architect &amp; Engineer</p> 
-            </div>
+              <h4 class="text-info"><b>HIPAA Compliant</b></h4>  -->
+             
+            
           </div>
         </div>
       </div>
@@ -249,7 +250,7 @@
 
  <!--section separator -->
 
- <section class="random-shapes-bg py-5">
+ <section id="sunbeams" class=" py-5">
       <div class="container">
        <div class="mx-auto text-center">
             <h3 class="section-heading text-white">Hold On to Your Wallet</h3>
