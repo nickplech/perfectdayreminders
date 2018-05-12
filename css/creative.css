@@ -1136,25 +1136,9 @@ main .jumbotron {
   background: transparent;
 }
 
-#world:after {
-  background: -webkit-gradient(linear,left top,right top,from(#f4f3fa),to(#fff));
-  background-image: linear-gradient(90deg, rgb(230, 235, 245), rgb(255, 255, 255));
-  opacity: 0.6;
-/*  max-width: 600px;
-*/  content: "";
-  height: 50rem;
-  left: -30%;
-  position: absolute;
-    right: -5%;
-    top: 25%;
-  -webkit-transform: rotateZ(-8deg);
-          transform: rotateZ(-8deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: -2;
-  overflow-x: hidden;
 
-}
+
+
 
 /*#world1:after {
   background: -webkit-gradient(linear,left top,right top,from( #2775e1),to(#27aee1));
@@ -1180,17 +1164,14 @@ main .jumbotron {
 
 .card {
   border: 0;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-weight: 400;
 }
-  .card[class*="border-"] {
-    border: 1px solid #9e9e9e;
-    box-shadow: none;
-  }
+
   
   .card .card-body {
     position: relative;
-    border-radius: 0 0 25px 25px;
+    /*border-radius: 0 0 25px 25px;*/
 
   }
 
@@ -1208,10 +1189,10 @@ main .jumbotron {
   }
 
   .card .card-body h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
-  .card .card-body .card-title div {
+/*  .card .card-body .card-title div {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
@@ -1219,7 +1200,7 @@ main .jumbotron {
   .card .card-body .card-title div:hover {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-  }
+  }*/
 
   .card .card-body .card-text {
     font-size: 0.9rem;
@@ -1230,18 +1211,30 @@ main .jumbotron {
 
 
 .avatar {
-  max-height: 150px;
+  max-height: 90px;
   max-width: auto;
 }
 
 .indigo {
   background-color: #5c6bc0 !important;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+/*  border-radius: 0 0 25px 25px;
+*/  position: relative;
+    -webkit-transform: rotateZ(-1deg);
+          transform: rotateZ(-1deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
 .pink {
   background-color: #fb8b8a;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+/*  border-radius: 0 0 25px 25px;*/
+}
+
+.card-bottom {
+  background: #fff;
+  max-height: 130px;
 }
 
 .test-welcome {
@@ -1272,9 +1265,10 @@ main .jumbotron {
 }
 
 .avatar {
-  margin-bottom: -50px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
+
+/*  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+*/  z-index: 1;
+
 }
 
 .background-world {
@@ -1285,7 +1279,6 @@ main .jumbotron {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-/*  background-attachment: fixed;*/
   background-repeat: no-repeat;
   min-height: 1300px;
 }
@@ -1311,16 +1304,7 @@ main .jumbotron {
   }
 }
 
-@media (min-width: 1200px) {
-  .card-body, .w3-panel {
-    margin: 0 150px 0 150px;
-  }
-  .avatar {
-  margin-bottom: -50px;
-  margin-left: 150px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-}
+
 
 
 @media (min-width: 992px) {
@@ -1369,19 +1353,7 @@ main .jumbotron {
     background-color: rgba(175, 0, 100, 0.3);
 }
 
-/*.clientview {
-  display: block;
-  position: relative;
-  left: -6%;
-  top: -30%;
-  max-width: 500px;
-  max-height: auto;
-  -webkit-transform: rotateZ(5deg);
-          transform: rotateZ(5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 2;
-}*/
+
 
 .clientview {
   display: block;
@@ -1403,9 +1375,8 @@ main .jumbotron {
   background: rgba(190, 160, 210, 1);
   content: "";
   height: 35rem;
-  left: 200px;
-/*  right: 60%;
-*/  position: relative;
+  left: 35%;
+ position: relative;
     width: 500px;
     bottom: -15%;
   border-radius: 25px;
@@ -1427,7 +1398,7 @@ overflow: visible !important;
   left: -15px;
   opacity: 0.7;
   position: relative;
-    width: 200px;
+    width: 16%;
     bottom: -69.6%;
   -webkit-transform: rotateZ(-5deg);
           transform: rotateZ(-5deg);
@@ -1445,7 +1416,7 @@ overflow: visible !important;
   height: 5rem;
   left: -15px;
   position: relative;
-    width: 300px;
+    width: 35%;
     bottom:17%;
   -webkit-transform: rotateZ(-5deg);
           transform: rotateZ(-5deg);
@@ -1500,7 +1471,7 @@ overflow: visible !important;
   height: 5rem;
   left: -15px;
   position: relative;
-    width: 220px;
+    width: 35%;
     bottom:17%;
   -webkit-transform: rotateZ(-5deg);
           transform: rotateZ(-5deg);
@@ -1527,7 +1498,7 @@ overflow-x: hidden;
   position: relative;
 
     bottom: 49.3%;
-    width: 300px;
+    width: 65%;
   -webkit-transform: rotateZ(-5deg);
           transform: rotateZ(-5deg);
   -webkit-transform-origin: 0 0;
@@ -1546,13 +1517,13 @@ overflow-x: hidden;
   position: relative;
     
     bottom: 50%;
-   width: 400px;
+   width: 45%;
   -webkit-transform: rotateZ(-5deg);
           transform: rotateZ(-5deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 0;
-overflow-x: hidden;
+
 }
 
 
@@ -1561,25 +1532,25 @@ overflow-x: hidden;
 color: rgba(175, 0, 100, 0.6);
 }
 
-#striped1 {
+/*.stripe-right3 {
   background: rgba(10, 60, 110, .2);
   content: "";
   height: 25rem;
-  left: 50px;
-  top: 25%;
-  position: absolute;
+  left: 300px;
+  top: 10%;
+  position: relative;
   bottom: 20%;
-  right: 10%;
+  width: 400px;
  border-radius: 25px;
-  -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  z-index: 1;
-  overflow-y: hidden;
+  z-index: 0;
+  overflow-x: hidden;
   padding: 40px;
 }
-
+*/
 section.striped {
   overflow-x: hidden;
 }
@@ -1590,3 +1561,28 @@ section.striped {
   }
 }
 
+.more {
+  margin-top: 300px;
+}
+
+#above-world {
+  min-height: 500px; 
+}
+
+#world:after {
+  background: -webkit-gradient(linear,left top,right top,from(#f4f3fa),to(#fff));
+  background-image: linear-gradient(90deg, rgb(230, 235, 245), rgb(255, 255, 255));
+  opacity: 0.6;
+/*  max-width: 600px;
+*/  content: "";
+  height: 70rem;
+  left: -30%;
+  position: absolute;
+    right: -5%;
+    top: 30%;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  z-index: -2;
+  overflow-x: hidden;
