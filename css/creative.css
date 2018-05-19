@@ -267,9 +267,6 @@ header.masthead {
   background-repeat: no-repeat;
   height: 1000px;
   min-height: 700px;
- 
-
-
   }
 
 header.masthead h1 {
@@ -770,7 +767,7 @@ footer {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%2333c5ff'/%3E%3Cstop offset='1' stop-color='%231cffe8'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%2331ccff'/%3E%3Cstop offset='1' stop-color='%2312f5fc'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%232fd2ff'/%3E%3Cstop offset='1' stop-color='%2308d3f8'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%232dd9ff'/%3E%3Cstop offset='1' stop-color='%230aaaea'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%232be0ff'/%3E%3Cstop offset='1' stop-color='%230c85db'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%2329e8ff'/%3E%3Cstop offset='1' stop-color='%230e64cb'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%2326efff'/%3E%3Cstop offset='1' stop-color='%231048bc'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%2324f6ff'/%3E%3Cstop offset='1' stop-color='%231230ae'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%2322feff'/%3E%3Cstop offset='1' stop-color='%23131ca0'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%2320fff8'/%3E%3Cstop offset='1' stop-color='%231c1392'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%231efff0'/%3E%3Cstop offset='1' stop-color='%232a1484'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%231cffe8'/%3E%3Cstop offset='1' stop-color='%23341477'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover;
-background-position: left;
+background-position: center;
 
 }
 
@@ -1217,20 +1214,25 @@ main .jumbotron {
 }
 
 .indigo {
-  background-color: #5c6bc0 !important;
+  background-color: #5c6bc0 !important; 
+  border-radius: 10px 10px 25px 25px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 400px;
+  position: relative;
 /*  border-radius: 0 0 25px 25px;
-*/  position: relative;
-    -webkit-transform: rotateZ(-1deg);
-          transform: rotateZ(-1deg);
+*/  
+/*    -webkit-transform: rotateZ(3deg);
+          transform: rotateZ(3deg);
   -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+          transform-origin: 0 0;*/
 }
 
 .pink {
   background-color: #fb8b8a;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   border-radius: 10px 10px 25px 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 400px;
+  position: relative;
 }
 
 .card-bottom {
@@ -1361,127 +1363,89 @@ main .jumbotron {
   display: block;
   position: relative;
   content: url(../img/placeit.png);
-  left: -1%;
-  top: -20%;
+  left: 15%;
+  top: -15%;
   max-width: 500px;
   max-height: auto;
-  -webkit-transform: rotateZ(5deg);
-          transform: rotateZ(5deg);
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 2;
-  overflow: visible;
-}
-
-.striped-backstripe {
-  background: rgba(190, 160, 210, 1);
-  content: "";
-  height: 35rem;
-  left: 35%;
- position: relative;
-    width: 500px;
-    bottom: -15%;
-  border-radius: 25px;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 1;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-overflow: visible !important; 
-
+  overflow: visible !important;
 }
 
 .striped:before {
   display: block;
-  background: #bd9fd1;
+  background: rgba(65, 110, 200, .7);
   content: "";
-  height: 5rem;
-  left: -15px;
+  height: 4rem;
+  left: -5%;
   opacity: 0.7;
   position: relative;
-    width: 16%;
-    bottom: -69.6%;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
+    width: 75%;
+    bottom: -55%;
+  -webkit-transform: rotateZ(-5.5deg);
+          transform: rotateZ(-5.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  z-index: 2;
+  overflow-x: hidden !important;
+}
+
+.striped:after {
+  display: block;
+  background: rgba(65, 110, 200, .6);
+  content: "";
+  height: 4rem;
+  left: -5%;
+  opacity: 0.7;
+  position: relative;
+    width: 70%;
+    bottom: 50%;
+  -webkit-transform: rotateZ(-5.5deg);
+          transform: rotateZ(-5.5deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 1;
   overflow-x: hidden;
 }
 
-.striped:after {
-  display: block;
-  background: #22aaaa;
-  content: "";
-  opacity: 0.7;
-  height: 5rem;
-  left: -15px;
-  position: relative;
-    width: 35%;
-    bottom:17%;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 0;
-overflow-x: hidden;
-}
 
-@media (max-width: 568px) {
-  .striped-backstripe {
-  background: rgba(190, 160, 210, 1);
+
+.striped2 {
+  display: block;
+  background: rgba(65, 110, 200, .5);
   content: "";
-  height: 35rem;
-  left: 120px;
-position: relative;
-    width: 500px;
-    bottom: -15%;
-  border-radius: 25px;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
+  height: 4rem;
+  left: -5%;
+  opacity: 0.7;
+  position: relative;
+    width: 65%;
+    bottom: -29.5%;
+  -webkit-transform: rotateZ(-5.5deg);
+          transform: rotateZ(-5.5deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 1;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-overflow: visible !important; 
-}
 
-.striped:before {
+}
+.striped2:after {
   display: block;
-  background: #bd9fd1;
+  background: rgba(65, 110, 200, .4);
   content: "";
-  height: 5rem;
-  left: -15px;
+  height: 4rem;
+  left: -5%;
   opacity: 0.7;
   position: relative;
-    width: 120px;
-    bottom: -69.6%;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
+    width: 100%;
+    bottom: 115%;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 1;
   overflow-x: hidden;
-}
-
-.striped:after {
-  display: block;
-  background: #22aaaa;
-  content: "";
-  opacity: 0.7;
-  height: 5rem;
-  left: -15px;
-  position: relative;
-    width: 35%;
-    bottom:17%;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 0;
-overflow-x: hidden;
-}
 }
 
 .striped-backstripe {
@@ -1490,74 +1454,17 @@ overflow-x: hidden;
   overflow: hidden;
 }
 
-.stripe-right2 {
-  display: block;
-  background: #22aaaa;
-  opacity: 0.4;
-  content: "";
-  height: 5rem;
-  left: 550px;
-  position: relative;
-
-    bottom: 49.3%;
-    width: 65%;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 0;
-  overflow-x: hidden;
-}
-
-.stripe-right1 {
-  display: block;
-  background: rgba(175, 0, 200, 0.2);
-
-  content: "";
-  height: 5rem;
-  left: 600px;
-  position: relative;
-    
-    bottom: 50%;
-   width: 45%;
-  -webkit-transform: rotateZ(-5deg);
-          transform: rotateZ(-5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 0;
-
-}
-
-
-
 .text-new {
 color: rgba(175, 0, 100, 0.6);
 }
-
-/*.stripe-right3 {
-  background: rgba(10, 60, 110, .2);
-  content: "";
-  height: 25rem;
-  left: 300px;
-  top: 10%;
-  position: relative;
-  bottom: 20%;
-  width: 400px;
- border-radius: 25px;
-  -webkit-transform: rotateZ(5deg);
-          transform: rotateZ(5deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  z-index: 0;
-  overflow-x: hidden;
-  padding: 40px;
-}
-*/
 
 section.striped {
   overflow-x: hidden;
 }
 
+section.striped2 {
+  overflow-y: visible;
+}
 @media screen and (max-width: 480px) {
    .nomobile {
       display:none;
