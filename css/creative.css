@@ -1132,9 +1132,9 @@ main .jumbotron {
   border: 0;
   border-radius: 0px 0px 10px 10px;
   font-weight: 400;
-  width: 400px;
+  width: 350px;
   position: relative;
-  bottom: 5%;
+  bottom: 0%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.1);
@@ -1177,27 +1177,28 @@ main .jumbotron {
   background-color: #5c6bc0 !important; 
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 400px;
+  width: 350px;
   position: relative;
 }
 
 .blueish {
 
-  background-color: rgba(140,230,220,1) !important; 
+  background-color: rgba(37, 172, 162, 0.95) !important; 
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.2);
-  width: 400px;
+  box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
+  width: 350px;
   position: relative;
-  top: -5%;
+  
 
 }
 
 .pink {
   background-color: #fb8b8a;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 400px;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  width: 350px;
   position: relative;
+  top: -5%;
 }
 
 .card-bottom {
@@ -1328,16 +1329,12 @@ main .jumbotron {
   display: block;
   position: relative;
   content: url(../img/placeit.png);
-  left: 17%;
+  left: -15%;
   top: -174%;
   max-width: 550px;
   max-height: auto;
-  -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
   z-index: 2;
-  overflow: visible !important;
+
 }
 
 
@@ -1360,7 +1357,7 @@ main .jumbotron {
 }
 
 .striped3 {
-  top: 48.2%;
+  top: 48.1%;
   left: -5px;
   position: relative;
   display: block;
@@ -1394,8 +1391,8 @@ main .jumbotron {
 }
 
 .striped5 {
-  top: 5%;
-  left: 1065px;
+  top: -5%;
+  left: 1565px;
   position: relative;
   display: block;
   color: rgba(65, 110, 200, .5);
@@ -1557,7 +1554,7 @@ section.striped2 {
 .codystar {
     font-family: Codystar, Lato, Montserrat, sans-serif;
     font-size: 40px;
-    color: blue;
+    color: rgb(65, 121, 222);
   }
 
   .textplacement {
