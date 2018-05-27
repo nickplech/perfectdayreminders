@@ -90,19 +90,11 @@ h6 {
 
 .text-faded-title {
   color: rgba(53, 177, 225, 0.9);
-
-  
 }
 
 .title-blue {
   color: rgba(27, 40, 112, 0.9);
   font-size: 2rem;
-
-}
-
-.header-blue {
-  padding-top: 20px;
-  color: rgba(53, 177, 225, 0.9);
 
 }
 
@@ -519,18 +511,6 @@ header.masthead p {
   }
 
 }
-
-/*@media (min-width: 2100px) {
-    .phone-btn {
-    width: 110px;
-    height: 110px;
-    margin-right: 300px;
-  }
-
-}*/
-/* .tb {
-    border: 1px solid red;
-  }*/
 
 
 /*phone animation*/
@@ -1129,15 +1109,13 @@ main .jumbotron {
 }
 
 .card {
-  border: 0;
+
   border-radius: 0px 0px 10px 10px;
-  font-weight: 400;
-  width: 350px;
+  border: none;
   position: relative;
-  bottom: 0%;
+
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px -8px 23px 0px rgba(0,0,0,0.1);
 }
 
   
@@ -1148,7 +1126,7 @@ main .jumbotron {
 
   .card .card-body h2 {
     font-weight: 400;
-    color: #5c6bc0;
+    color: rgba(45, 142, 207, 1);
   }
 
   .card .card-body p {
@@ -1174,11 +1152,17 @@ main .jumbotron {
 }
 
 .indigo {
-  background-color: #5c6bc0 !important; 
+  background-color: rgba(45, 142, 207, 1) !important; 
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 350px;
+  box-shadow: 25px 40px 33px 0 rgba(0,0,0,0.2);
+  
   position: relative;
+
+      -webkit-transform: rotateZ(0deg, 5deg);
+  -moz-transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  -o-transform: rotateZ( -5deg);
+  transform: rotateZ( 5deg);
 }
 
 .blueish {
@@ -1186,7 +1170,7 @@ main .jumbotron {
   background-color: rgba(37, 172, 162, 0.95) !important; 
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
-  width: 350px;
+
   position: relative;
   
 
@@ -1195,17 +1179,17 @@ main .jumbotron {
 .pink {
   background-color: #fb8b8a;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-  width: 350px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
   position: relative;
-  top: -5%;
+
 }
 
-.card-bottom {
+/*.card-bottom {
   background: #fff;
   max-height: 130px;
   border-radius: 0 0 25px 25px;
-}
+}*/
 
 .test-welcome {
   margin: 0;
@@ -1255,11 +1239,12 @@ main .jumbotron {
 
 
 .map-title {
+  font-family: 'Pacifico', cursive;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
-  font-size: 1.3rem;
-  font-weight: 300;
+ 
+  font-size: 1.8rem;
+  font-weight: 400;
   color: rgb(65, 121, 222);
 }
 
@@ -1553,11 +1538,15 @@ section.striped2 {
 
 .codystar {
     font-family: Codystar, Lato, Montserrat, sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(65, 121, 222);
   }
 
   .textplacement {
   position: relative;
   top: -165%;
+  }
+
+  #pointercolor {
+    color: #27aee1;
   }
