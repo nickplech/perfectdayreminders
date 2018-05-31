@@ -1157,7 +1157,7 @@ main .jumbotron {
   background-color: rgba(45, 142, 207, 1) !important; 
   border-radius: 10px 10px 10px 10px;
   top: 30%;
-  right: -18%;
+  right: -11%;
 
     
 -webkit-transform: rotate3d(.1,-.966,.3,20deg) rotate(1deg);
