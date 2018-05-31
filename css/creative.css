@@ -1152,17 +1152,18 @@ main .jumbotron {
 }
 
 .indigo {
+  position: relative;
+ width: 350px;
   background-color: rgba(45, 142, 207, 1) !important; 
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 25px 40px 33px 0 rgba(0,0,0,0.2);
-  
-  position: relative;
+  top: 30%;
+  right: -18%;
 
-      -webkit-transform: rotateZ(0deg, 5deg);
-  -moz-transform: rotateZ(5deg);
-  -ms-transform: rotateZ(5deg);
-  -o-transform: rotateZ( -5deg);
-  transform: rotateZ( 5deg);
+    
+-webkit-transform: rotate3d(.1,-.966,.3,20deg) rotate(1deg);
+    transform: rotate3d(1,-.966,.6,25deg) rotate(1deg);
+    -webkit-box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 26.2px 30.5px 25px -21.5px rgba(0,0,0,.4);
+    box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 16.2px 30.5px 25px -11.5px rgba(0,0,0,.4);
 }
 
 .blueish {
@@ -1170,19 +1171,31 @@ main .jumbotron {
   background-color: rgba(37, 172, 162, 0.95) !important; 
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
-
   position: relative;
-  
+  box-shadow: 25px 40px 33px 0 rgba(0,0,0,0.2);
+  -webkit-transform: rotateZ(0deg, 5deg);
+  -moz-transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  -o-transform: rotateZ( -5deg);
+  transform: rotateZ( 5deg);  
 
 }
 
 .pink {
+      
+  width: 350px;
   background-color: #fb8b8a;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
   position: relative;
-
+  top: -19%;
+  left: -30%;
+  z-index: 0;
+-webkit-transform: rotate3d(.1,-.966,.3,20deg) rotate(1deg);
+    transform: rotate3d(1,-.966,-.3,5deg) rotate(-1deg);
+    -webkit-box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 26.2px 30.5px 25px -21.5px rgba(0,0,0,.4);
+    box-shadow: 7.1px 42.5px 55px -25px rgba(50,50,93,.6), 2px 0.5px 45px 0.5px rgba(0,0,0,.4);
 }
 
 /*.card-bottom {
