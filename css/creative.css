@@ -1103,6 +1103,9 @@ main .jumbotron {
   background: transparent;
 }
 
+.no-border {
+  border: none;
+}
 
 .overflow {
   overflow-x: hidden;
@@ -1339,7 +1342,7 @@ main .jumbotron {
 
 .striped2 {
   top: 60%;
-  left:-15px;
+  left:0vw;
   position: relative;
   display: block;
   color: rgba(65, 110, 200, .5);
@@ -1355,8 +1358,8 @@ main .jumbotron {
 }
 
 .striped3 {
-  top: 48.1%;
-  left: -5px;
+  top: 48.2%;
+  left: 0vw;
   position: relative;
   display: block;
   color: rgba(37, 172, 162, 0.45);
@@ -1373,13 +1376,13 @@ main .jumbotron {
 
 .striped4 {
   top: 0%;
-  left: 365px;
+  left: 15vw;
   position: relative;
   display: block;
   color: rgba(65, 110, 200, .5);
   width: 0px;
   height: 0px;
-   border-left: 370px solid ;
+   border-left: 200px solid ;
    border-bottom: 20px solid rgba(65, 110, 200, .5);
    border-right: 70px solid ;
    border-top: 30px  solid rgba(65, 110, 200, .5);
@@ -1390,7 +1393,7 @@ main .jumbotron {
 
 .striped5 {
   top: -5%;
-  left: 1565px;
+  left: 80vw;
   position: relative;
   display: block;
   color: rgba(65, 110, 200, .5);
