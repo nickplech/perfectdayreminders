@@ -44,19 +44,63 @@ body {
   top: 0;
   right: 0;
   min-width: 60%;
-  
   background-attachment: fixed;
 }
 
+#carousel1-img {
+    background: url(../img/spascene.jpg) no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  background-position: center center;
+  padding: none;
+  margin: none;
+}
+
 #carousel2-img {
-  
- 
   position: absolute;
   top: 0;
   right: 0;
   max-width: 1100px;
   background-attachment: fixed;
+}
 
+#carousel3-img {
+  background: url(../img/medicalscene.jpg) no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  background-position: center center;
+  padding: none;
+  margin: none;
+}
+
+#carousel4-img {
+  background: url(../img/realestatereminders.jpg) no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  background-position: center center;
+  padding: none;
+  margin: none;
+}
+
+#carousel5-img {
+  background: url(../img/fitnessreminders.jpg) no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  background-position: center center;
+  padding: none;
+  margin: none;
 }
 
 /* MARKETING CONTENT
