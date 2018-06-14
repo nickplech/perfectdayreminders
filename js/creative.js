@@ -56,6 +56,8 @@
     distance: '0px'
   }, 300);
 
+var rellax = new Rellax('.rellax');
+
   
  
 

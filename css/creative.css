@@ -498,7 +498,6 @@ header.masthead p {
   }
 
   .phone-btn {
- 
     margin-right: 10px;
   }
 
@@ -1159,90 +1158,133 @@ main .jumbotron {
  width: 350px;
   background-color: rgba(45, 142, 207, 1) !important; 
   border-radius: 10px 10px 10px 10px;
-  top: 30%;
-  right: -11%;
-
-    
 -webkit-transform: rotate3d(.1,-.966,.3,20deg) rotate(1deg);
     transform: rotate3d(1,-.966,.6,25deg) rotate(1deg);
     -webkit-box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 26.2px 30.5px 25px -21.5px rgba(0,0,0,.4);
     box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 16.2px 30.5px 25px -11.5px rgba(0,0,0,.4);
+ 
 }
 
-.blueish {
-
-  background-color: rgba(37, 172, 162, 0.95) !important; 
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
-  position: relative;
-  box-shadow: 25px 40px 33px 0 rgba(0,0,0,0.2);
-  -webkit-transform: rotateZ(0deg, 5deg);
-  -moz-transform: rotateZ(5deg);
-  -ms-transform: rotateZ(5deg);
-  -o-transform: rotateZ( -5deg);
-  transform: rotateZ( 5deg);  
-
-}
 
 .pink {
       
   width: 350px;
   background-color: #fb8b8a;
   border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-
   position: relative;
-  top: -19%;
-  left: -30%;
   z-index: 0;
 -webkit-transform: rotate3d(.1,-.966,.3,20deg) rotate(1deg);
-    transform: rotate3d(1,-.966,-.3,5deg) rotate(-1deg);
+    transform: rotate3d(1,-.966,.6,25deg) rotate(1deg);
     -webkit-box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 26.2px 30.5px 25px -21.5px rgba(0,0,0,.4);
-    box-shadow: 7.1px 42.5px 55px -25px rgba(50,50,93,.6), 2px 0.5px 45px 0.5px rgba(0,0,0,.4);
+    box-shadow: 27.1px 42.5px 125px -25px rgba(50,50,93,.5), 16.2px 30.5px 25px -11.5px rgba(0,0,0,.4);
 }
 
-/*.card-bottom {
-  background: #fff;
-  max-height: 130px;
-  border-radius: 0 0 25px 25px;
-}*/
+.t-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.test-welcome {
+.test-welcome1 {
+  position: relative;
   margin: 0;
+  width: 100px;
+  height: 100px;
   padding: 15px;
-  background-image: linear-gradient(to top right, pink,red);
-  opacity: 0.6;
+  background-image: linear-gradient(to top right, green,blue);
+  opacity: 0.4;
   border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.test-welcome1:after {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  content: "";
+  margin: 0;
+  width: 120px;
+  height: 5px;
+  background-image: linear-gradient(to top right, blue,green);
+  opacity: 0.4;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .test-welcome2 {
+  display: block;
+  position: relative;
+  top: -100px;
+  left: 220px;
   margin: 0;
+  width: 100px;
+  height: 100px;
   padding: 15px;
-  color: linear-gradient(to top right, white,blue);
-  opacity: 0.6;
+  background-image: linear-gradient(to top right, green,blue);
+  opacity: 0.4;
   border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.test-welcome2:after {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  content: "";
+  margin: 0;
+  width: 120px;
+  height: 5px;
+  background-image: linear-gradient(to top right, blue,green);
+  opacity: 0.4;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .test-welcome3 {
+  position: relative;
+  top: -200px;
+  left: 440px;
   margin: 0;
+  width: 100px;
+  height: 100px;
   padding: 15px;
-  color: linear-gradient(to top right, yellow,orange);
-  opacity: 0.6;
+  background-image: linear-gradient(to top right, green,blue);
+  opacity: 0.4;
   border-radius: 50%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.test-welcome3:after {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  content: "";
+  margin: 0;
+  width: 120px;
+  height: 5px;
+  background-image: linear-gradient(to top right, blue,green);
+  opacity: 0.4;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.test-welcome4 {
+  position: relative;
+  top: -300px;
+  left: 660px;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  background-image: linear-gradient(to top right, green,blue);
+  opacity: 0.4;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 .avatar {
-
-/*  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-*/  z-index: 1;
-
+ z-index: 1;
 }
 
 .background-world {
-  /*background-color: #F4F6FB;*/
   background-image: url("../img/map.jpg");
   background-size: cover;
   background-position: bottom center;
@@ -1258,7 +1300,6 @@ main .jumbotron {
   font-family: 'Pacifico', cursive;
   margin-left: auto;
   margin-right: auto;
- 
   font-size: 1.8rem;
   font-weight: 400;
   color: rgb(65, 121, 222);
@@ -1274,9 +1315,6 @@ main .jumbotron {
   font-weight: 300;
   }
 }
-
-
-
 
 @media (min-width: 992px) {
   .map-title {
@@ -1300,7 +1338,6 @@ main .jumbotron {
 
   .striped {
     display: block;
-    
     background: -webkit-gradient(linear,top, bottom,from(#fff),to(#f4f3fa));
     background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(245, 245, 250));
     background: linear-gradient(180deg,#fff,#f4f3fa);
@@ -1342,7 +1379,7 @@ main .jumbotron {
 
 .striped2 {
   top: 60%;
-  left:0vw;
+  left:2vw;
   position: relative;
   display: block;
   color: rgba(65, 110, 200, .5);
@@ -1350,7 +1387,7 @@ main .jumbotron {
   height: 0px;
    border-left: 100px solid ;
    border-bottom: 20px solid rgba(65, 110, 200, .5);
-   border-right: 190px solid ;
+   border-right: 150px solid ;
    border-top: 30px  solid rgba(65, 110, 200, .5);
   content: "";
   z-index: 1;
@@ -1358,17 +1395,17 @@ main .jumbotron {
 }
 
 .striped3 {
-  top: 48.2%;
-  left: 0vw;
+  top: 39.2%;
+  left: .5vw;
   position: relative;
   display: block;
-  color: rgba(37, 172, 162, 0.45);
+  color: rgba(37, 172, 162, 0.2);
   width: 0px;
   height: 0px;
    border-left: 70px solid ;
-   border-bottom: 20px solid rgba(37, 172, 162, 0.45);
+   border-bottom: 20px solid rgba(37, 172, 162, 0.2);
    border-right: 40px solid ;
-   border-top: 30px  solid rgba(37, 172, 162, 0.45);
+   border-top: 30px  solid rgba(37, 172, 162, 0.2);
   content: "";
   z-index: 1;
   overflow-x: hidden;
@@ -1382,10 +1419,11 @@ main .jumbotron {
   color: rgba(65, 110, 200, .5);
   width: 0px;
   height: 0px;
-   border-left: 200px solid ;
+   border-left: 80px solid ;
    border-bottom: 20px solid rgba(65, 110, 200, .5);
    border-right: 70px solid ;
    border-top: 30px  solid rgba(65, 110, 200, .5);
+
   content: "";
   z-index: 1;
   overflow: visible;
@@ -1399,27 +1437,28 @@ main .jumbotron {
   color: rgba(65, 110, 200, .5);
   width: 0px;
   height: 0px;
-   border-left: 170px solid ;
+   border-left: 130px solid ;
    border-bottom: 20px solid rgba(65, 110, 200, .5);
    border-right: 70px solid ;
    border-top: 30px  solid rgba(65, 110, 200, .5);
-  content: "";
+ 
   z-index: 1;
   overflow: visible;
+  font-size: 40px;
 }
 
 .striped6 {
-  top: 18.7%;
-  left: 1405px;
+  top: 14.7%;
+  left: 89vw;
   position: relative;
   display: block;
-  color: rgba(65, 110, 200, .5);
+  color: rgba(65, 110, 200, .3);
   width: 0px;
   height: 0px;
-   border-left: 170px solid ;
-   border-bottom: 20px solid rgba(65, 110, 200, .5);
+   border-left: 70px solid ;
+   border-bottom: 20px solid rgba(65, 110, 200, .3);
    border-right: 70px solid ;
-   border-top: 30px solid rgba(65, 110, 200, .5);
+   border-top: 30px solid rgba(65, 110, 200, .3);
   content: "";
   z-index: 1;
   overflow: visible;
@@ -1427,13 +1466,13 @@ main .jumbotron {
 
 .striped7 {
   top: 33.5%;
-  left: 765px;
+  left: 45vw;
   position: relative;
   display: block;
   color: rgba(37, 172, 162, 0.65);
   width: 0px;
   height: 0px;
-   border-left: 170px solid ;
+   border-left: 120px solid ;
    border-bottom: 20px solid rgba(37, 172, 162, 0.65);
    border-right: 70px solid ;
    border-top: 30px solid rgba(37, 172, 162, 0.65);
@@ -1443,8 +1482,8 @@ main .jumbotron {
 }
 
 .striped8 {
-  top: 22%;
-  left: 1605px;
+  top: 24%;
+  left: 84vw;
   position: relative;
   display: block;
   color: rgba(65, 110, 200, .5);
@@ -1452,7 +1491,7 @@ main .jumbotron {
   height: 0px;
    border-left: 70px solid ;
    border-bottom: 20px solid rgba(65, 110, 200, .5);
-   border-right: 570px solid ;
+   border-right: 120px solid ;
    border-top: 30px solid rgba(65, 110, 200, .5);
   content: "";
   z-index: 1;
@@ -1461,19 +1500,19 @@ main .jumbotron {
 
 .striped9 {
   top: 8.5%;
-  left: 1165px;
+  left: 64vw;
   position: relative;
   display: block;
-  color: rgba(65, 110, 200, .5);
+  color: rgba(65, 110, 200, .2);
   width: 0px;
   height: 0px;
    border-left: 170px solid ;
-   border-bottom: 20px solid rgba(65, 110, 200, .5);
+   border-bottom: 20px solid rgba(65, 110, 200, .2);
    border-right: 70px solid ;
-   border-top: 30px solid rgba(65, 110, 200, .5);
+   border-top: 30px solid rgba(65, 110, 200, .2);
   content: "";
   z-index: 1;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 .striped10 {
@@ -1495,11 +1534,13 @@ main .jumbotron {
 }
 
 .skew {
-    -webkit-transform: skew(0deg, -5deg);
-  -moz-transform: skew(0deg, -5deg);
-  -ms-transform: skew(0deg, -5deg);
-  -o-transform: skew(0deg, 5deg);
-  transform: skew(0deg, -5deg);
+    -webkit-transform: skew(0deg, -1deg);
+  -moz-transform: skew(0deg, -1deg);
+  -ms-transform: skew(0deg, -1deg);
+  -o-transform: skew(0deg, 1deg);
+  transform: skew(0deg, -1deg);
+  border-radius: 5px;
+
 }
 
 .striped-backstripe {
@@ -1565,5 +1606,5 @@ section.striped2 {
   }
 
   #pointercolor {
-    color: #27aee1;
+    color: rgba(34, 170, 188, 1);
   }
