@@ -233,9 +233,7 @@ img::-moz-selection {
 
 .pday-logo {
   position: relative;
-  /*top: 10px;*/
-
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 @media (max-width:992px) {
@@ -251,18 +249,24 @@ header {
   position: relative;
 }
 
-header.masthead {
-  background-image: url("../img/header.jpg");
+.hero-background-section {
+  background-color: rgba(100,100,240,1);
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  min-height: 100%;
-  z-index: 1;
-  }
+  min-height: 300px;
+  background-attachment: fixed;
+  z-index: 4;
+  width: 100vw;
+
+ }
+
+.brightness {
+  -webkit-filter: brightness(0.60);filter: brightness(0.60);
+}
 
 header.masthead h1 {
   font-size: 1.4rem;
@@ -273,29 +277,48 @@ header.masthead p {
   font-size: .8rem;
 }
 
-/*grid section for header*/
 
-.welcome-grid {
-  display: grid;
-  height: 100vh;
-  width: 100vw;
-  grid-template-columns: 600px 600px 1fr;
+
+section.background-world h2 {
+  color: rgb(70,200,120);
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
-.left-grid {
-  grid-column: 1/2;
+.phone-circle {
+  position: relative;
+ /* top: 60%;*/
+ /* left: 50%;*/
+  display: block;
+  background-color: rgba(100,100,150,1);
+  height: 450px;
+  width: 100%;
+  z-index: 0;
 }
 
-.right-grid {
-  grid-column: 2/3;
+.phone-circle2 {
+
+  position: relative;
+  top: 40%;
+  display: block;
+  background-color:#f4f3fa;
+  height: 700px;
+  width: 100%;
+  z-index: 1;
 }
 
 .phone-btn {
+  position: absolute;
   width: 70px;
   height: 70px;
   z-index: 1;
   cursor: pointer;
+  border-radius: 50%;
+
+
 }
+
 
 @media (min-width: 320px) {
   header.masthead h1 {
@@ -327,19 +350,13 @@ header.masthead p {
 
 @media (min-width: 768px) {
 
-
   .phone-btn {
     width: 90px;
     height: 90px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    bottom: 0px;
  }
-
 }
 
 @media (min-width: 992px) {
-
 
   .main-phone { 
     display: block;
@@ -347,16 +364,17 @@ header.masthead p {
     bottom: 0%;
     width: 450px;
     height: auto;
-    z-index: 0;
-    margin-left: 100px;
+    z-index: -1;
+
   }
 
   .phone-btn {
-    width: 90px;
-    height: 90px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    width: 70px;
+    height: 70px;
+
   }
+
+
 
   header.masthead h1 {
     font-size: 2rem;
@@ -380,10 +398,6 @@ header.masthead p {
 @media (min-width: 1370px) {
 
 
-  .phone-btn {
-    margin-right: 10px;
-  }
-
    header.masthead h1 {
     font-size: 2.2rem;
   }
@@ -402,7 +416,7 @@ header.masthead p {
 /*phone animation*/
 
 .main-phone {
-    position: absolute;
+    position: relative;
     -webkit-animation-name: phone-slide;
     -webkit-animation-duration: 1s; 
     -webkit-animation-delay: 1s; 
@@ -416,15 +430,15 @@ header.masthead p {
 
 @-webkit-keyframes phone-slide {
 
-    0%   {bottom: -100%;}
-    100% {bottom: 0%;}
+    0%   {top: 80%;}
+    100% {top: -23%;}
     0% {visibility: hidden;}
   100% {visibility: visible;}
 }
 
 @keyframes phone-slide {
-    0%   {bottom: -100%;}
-    100% {bottom: 0%;}
+    0%   {top: 80%;}
+    100% {top: -23%;}
     0% {visibility: hidden;}
     100% {visibility: visible;}
 }
@@ -460,7 +474,7 @@ section.welcome h2 {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  color: rgb(250,50,100) !important;
 }
 
 .text-info {
@@ -608,12 +622,6 @@ footer {
   background-attachment: fixed;
 }
 
-
-.random-shapes-bg {
-  background-color: #0059bd;
-  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23b2f3f6' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-}
 
 #sunbeams {
   background-color: #33c5ff;
@@ -961,6 +969,10 @@ background-position: center;
 
 }
 
+.large-text {
+  font-size: 2rem;
+}
+
 main .jumbotron {
   background: linear-gradient(270deg, #2775e1, #27aee1, #27a3e8);
   background-size: 600% 600%;
@@ -1001,51 +1013,26 @@ main .jumbotron {
 
 .card {
 
-  border-radius: 0px 0px 10px 10px;
-  border: none;
+  display: block;
   position: relative;
-
+  background: transparent;
   margin-left: auto;
   margin-right: auto;
 }
 
   
-  .card .card-body {
-    position: relative;
-    padding-bottom: 10px;
-  }
-
-  .card .card-body h2 {
-    font-weight: 400;
-    color: rgba(45, 142, 207, 1);
-  }
-
-  .card .card-body p {
-    color: rgba(0, 0, 0, 0.4);
-  }
-
-
-  .card .card-body h2 {
-    font-size: 1.3rem;
-  }
-
-  .card .card-body .card-text {
-    font-size: 0.9rem;
-    color: #5c6bc0;
-    font-weight: 400;
-  }
-
 .avatar {
   max-height: 90px;
   max-width: auto;
   border: 4px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
  
 }
 
 .indigo {
   position: relative;
  width: 350px;
-  background-color: rgba(45, 142, 207, 1) !important; 
+  background-color: rgba(45, 102, 207, 1) !important; 
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 12px 25px 5px rgba(0,0,0,.4);
 }
@@ -1055,7 +1042,7 @@ main .jumbotron {
   position: relative;
   display: block;
   width: 350px;
-  background-color: #fb8b8a;
+  background-color: rgba(45, 102, 207, 1);
   border-radius: 10px 10px 10px 10px;
   position: relative;
   z-index: 0;
@@ -1089,16 +1076,25 @@ main .jumbotron {
 
 .background-world {
   background-color: #f4f3fa;
-  /*min-height: 800px;*/
 }
 
 .map-title {
-  font-family: 'pacifico', cursive;
+  font-family: 'lobster', cursive;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.8rem;
   font-weight: 500;
-  color: rgb(65, 121, 222);
+  color: rgb(250, 250, 250);
+/*text-shadow: 1px 1px rgba(0, 0, 0,.4);*/
+}
+
+.title-green {
+color: rgb(85, 210, 0);
+text-shadow: 1px 1px rgba(0, 0, 0,.4);
+}
+
+.shadow-text {
+  text-shadow: 2px 2px rgb(100,100,100);
 }
 
 @media (min-width: 568px) {
@@ -1118,6 +1114,7 @@ main .jumbotron {
   max-width: 100%;
   font-size: 1.8rem;
   font-weight: 500;
+  margin-top: 0px;
   }
 }
 
@@ -1126,7 +1123,7 @@ main .jumbotron {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   font-weight: 500;
   }
 }
@@ -1140,6 +1137,7 @@ main .jumbotron {
     height: 900px;*/
     overflow-x: hidden;
     overflow-y: hidden;
+    overflow: auto;
     z-index: 0;
 }
 
@@ -1163,18 +1161,18 @@ main .jumbotron {
   position: relative;
   content: url(../img/placeit.png);
  
-  top: -25%;
+  top: -22%;
   max-width: 550px;
   max-height: auto;
   z-index: 2;
 }
 
 .striped2 {
-  top: 110%;
+  top: 700px;
   left:10%;
   position: absolute;
   display: block;
-  background-color: rgba(65, 110, 200, .3);
+  background-color: rgba(37, 172, 162, 0.1);
   width: 100px;
   height: 100px;
   content: "";
@@ -1184,7 +1182,7 @@ main .jumbotron {
 }
 
 .striped2:before {
-  top: 150px;
+  top: 80px;
   left: 30px;
   position: absolute;
   display: block;
@@ -1202,7 +1200,7 @@ main .jumbotron {
   left: -60px;
   position: absolute;
   display: block;
-  background-color: rgba(65, 110, 200, .2);
+  background-color: rgba(37, 172, 162, 0.1);
   width: 100px;
   height: 100px;
   content: "";
@@ -1212,8 +1210,8 @@ main .jumbotron {
 }
 
 .striped3 {
-  top: 190%;
-  left: 70%;
+  top: 100%;
+  left: 80%;
   position: relative;
   display: block;
   background-color: rgba(65, 110, 200, .2);
@@ -1226,7 +1224,7 @@ main .jumbotron {
 }
 
 .striped3:before {
-  top: 400px;
+  top: 230px;
   left: 170%;
   position: absolute;
   display: block;
@@ -1240,7 +1238,7 @@ main .jumbotron {
 }
 
 .striped3:after {
-  top: 200px;
+  top: 140px;
   left: 40%;
   position: relative;
   display: block;
@@ -1253,8 +1251,8 @@ main .jumbotron {
 }
 
 .striped4 {
-  top: 8.5%;
-  left: 80%;
+  top: 25%;
+  left: 90%;
   position: relative;
   display: block;
   background-color: rgba(65, 110, 200, .15);
@@ -1271,28 +1269,43 @@ main .jumbotron {
   overflow: hidden;
 }
 
-.striped:before {
+.striped10 {
   top: -15%;
-/*  background-color: rgba(30, 100, 230, .1);
-  background: -webkit-gradient(linear,top,bottom,from(rgba(37, 192, 162, 0.5)),to(rgba(30, 100, 230, .5)));
-  background-image: linear-gradient(180deg, rgba(37, 192, 162, 0.5), rgba(30, 100, 230, .5));*/
   display: block;
   position: absolute;
   content: "";
   left: -5%;
-  right: -5%;
+  right: -3%;
   height: 700px;
+  -webkit-transform: rotateZ(-8deg);
   transform: rotateZ(-8deg);
   z-index: 0;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(270deg, #2775e1, #27aee1, rgba(37, 192, 162, 0.5));
- /* background-size: 600% 600%;*/
-  -webkit-animation: index-header 6s ease infinite;
-  -moz-animation: index-header 6s ease infinite;
-  animation: index-header 6s ease infinite;
+  overflow-y: hidden;
+  background: linear-gradient(270deg, rgba(37, 222, 162, 1), #27aee1,#27a3e8);
+  background-size: 600% 600%;
+  -webkit-animation: index-header 20s ease infinite;
+  -moz-animation: index-header 20s ease infinite;
+  animation: index-header 20s ease infinite;
 }
+
+/*.striped:after {
+  top: -600px;
+  background-color: rgba(30, 100, 230, 1);
+  display: block;
+  position: relative;
+  content: "";
+  left: -5%;
+  right: -3%;
+  height: 400px;
+  transform: rotateZ(-8deg);
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}*/
 
 @-webkit-keyframes index-header {
     0%{background-position:0% 50%}
@@ -1356,17 +1369,11 @@ section.striped2 {
     color: rgba(0,0,0,.9);
   }
 
-  .textplacement {
-  position: relative;
-  top: -165%;
-  }
-
   #pointercolor {
     color: rgba(34, 170, 188, 1);
   }
 
 .icons-circle {
-
   border: 2px solid white;
   opacity: .7;
   border-radius: 50%;
