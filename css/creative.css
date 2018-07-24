@@ -250,7 +250,7 @@ header {
 }
 
 .hero-background-section {
-  background-color: rgba(100,100,240,1);
+  background-color: rgba(140,70,240,1);
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -279,11 +279,24 @@ header.masthead p {
 
 
 
-section.background-world h2 {
+section.background-world h1 {
   color: rgb(70,200,120);
-  font-size: 1.4rem;
+  font-size: 2.0rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+}
+
+.phone-circle:before {
+  position: absolute;
+  top: 0%;
+  left: -70%;
+  display: block;
+  background-color: rgba(100,70,240,1);
+  height: 450px;
+  width: 3000px;
+  z-index: -1;
+  content: "";
+  overflow-x: hidden;
 }
 
 .phone-circle {
@@ -291,7 +304,7 @@ section.background-world h2 {
  /* top: 60%;*/
  /* left: 50%;*/
   display: block;
-  background-color: rgba(100,100,150,1);
+  background-color: rgba(100,70,240,1);
   height: 450px;
   width: 100%;
   z-index: 0;
@@ -309,12 +322,13 @@ section.background-world h2 {
 }
 
 .phone-btn {
-  position: absolute;
+  position: relative;
   width: 70px;
   height: 70px;
   z-index: 1;
   cursor: pointer;
   border-radius: 50%;
+  margin-top: 20px;
 
 
 }
@@ -1167,28 +1181,28 @@ text-shadow: 1px 1px rgba(0, 0, 0,.4);
   z-index: 2;
 }
 
-.striped2 {
+/*.striped2 {
   top: 700px;
-  left:10%;
+  left:5%;
   position: absolute;
   display: block;
   background-color: rgba(37, 172, 162, 0.1);
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   content: "";
   z-index: 1;
   overflow-x: visible;
   border-radius: 50%;
-}
+}*/
 
 .striped2:before {
-  top: 80px;
+  top: 140px;
   left: 30px;
   position: absolute;
   display: block;
   background-color: rgba(37, 172, 162, 0.1);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   content: "";
   z-index: 1;
   overflow-x: visible;
@@ -1291,21 +1305,6 @@ text-shadow: 1px 1px rgba(0, 0, 0,.4);
   animation: index-header 20s ease infinite;
 }
 
-/*.striped:after {
-  top: -600px;
-  background-color: rgba(30, 100, 230, 1);
-  display: block;
-  position: relative;
-  content: "";
-  left: -5%;
-  right: -3%;
-  height: 400px;
-  transform: rotateZ(-8deg);
-  z-index: 0;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}*/
 
 @-webkit-keyframes index-header {
     0%{background-position:0% 50%}
