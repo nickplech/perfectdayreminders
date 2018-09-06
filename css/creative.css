@@ -1321,6 +1321,9 @@ section.striped {
   transition-timing-function: cubic-bezier(0.98, 0, 0.22, 0.98), linear;
   will-change: transform, opacity;
 }
+.option:hover {
+  background: rgba(0,60,240,1);
+}
 
 .option:last-child {
   margin-right: 0;
@@ -1514,6 +1517,7 @@ section.striped {
   top: 0%;
   left: 400px;
   z-index: 5;
+
 }
 
 .home-text {
