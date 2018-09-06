@@ -56,9 +56,7 @@
     distance: '0px'
   }, 300);
 
-function showText() {
-  document.getElementById('.confirm').style.display = 'block';
-}
+
 
   
  
