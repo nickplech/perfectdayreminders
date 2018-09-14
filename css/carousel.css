@@ -157,23 +157,10 @@ body {
   }
 }
 
-/*monitor with bulk view background display*/
 
 
 
-@media (min-width: 992px) {
-  .hero-background-section {
-   background-image: url("../img/appointment-reminder-app.jpeg");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 750px;
-  background-attachment: fixed;
-  }
-}
+
 
 
 /*woman holding cell phone background display*/
