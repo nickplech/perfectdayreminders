@@ -1,33 +1,32 @@
 
-const phoneBtn = document.querySelector(".pho-btn-square");
+const medical = document.getElementById('doc-btn');
+const fitness = document.getElementById('fit');
+const realEstate = document.getElementById('house');
+const spa = document.getElementById('spa');
 
-phoneBtn.onclick = function(event){
+medical.onclick = () => {
+	document.getElementById('1').src = "img/docrem.png";
+	document.getElementById('2').src = "img/confirm.png";
+	document.getElementById('3').src = "img/confirmrem.png";
+}
 
-	if (document.getElementById('doc')) {
-		document.getElementById("1").src = "../PerfectDayReminders/img/docrem.svg";
-		document.getElementById("2").src = "../PerfectDayReminders/img/confirm.svg";
-		document.getElementById("3").src = "../PerfectDayReminders/img/confirmreminder.svg";
-	} else if (document.getElementById('fit')) {
-		document.getElementById("1").src = "../PerfectDayReminders/img/drplechas.jpg";
-		document.getElementById("2").src = "../PerfectDayReminders/img/confirm.svg";
-		document.getElementById("3").src = "../PerfectDayReminders/img/confirmreminder.svg";
-	} else if (document.getElementById('house')) {
-		document.getElementById("1").src = "../PerfectDayReminders/img/docrem.svg";
-		document.getElementById("2").src = "../PerfectDayReminders/img/confirm.svg";
-		document.getElementById("3").src = "../PerfectDayReminders/img/confirmreminder.svg";
-	} else if (document.getElementById('spa')) {
-		document.getElementById("1").src = "../PerfectDayReminders/img/docrem.svg";
-		document.getElementById("2").src = "../PerfectDayReminders/img/confirm.svg";
-		document.getElementById("3").src = "../PerfectDayReminders/img/confirmreminder.svg";
-	} else {
-		false
-	}
-};
+fitness.onclick = () => {
+	document.getElementById('1').src = "img/docrem.png";
+	document.getElementById('2').src = "img/docrem.png";
+	document.getElementById('3').src = "img/docrem.png";
+}
 
+realEstate.onclick = () => {
+	document.getElementById('1').src = "img/realty-reminder.png";
+	document.getElementById('2').src = "img/confirm.png";
+	document.getElementById('3').src = "img/realty-confirmed.png";
+}
 
-
-
-
+spa.onclick = () => {
+	document.getElementById('1').src = "img/sparem.png";
+	document.getElementById('2').src = "img/cancel.svg";
+	document.getElementById('3').src = "img/docrem.png";
+}
 
 
 
